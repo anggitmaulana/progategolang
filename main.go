@@ -16,7 +16,7 @@ func main() {
 	fileServer := http.FileServer(http.Dir("asset"))
 	mux.Handle("/static/", http.StripPrefix("/static", fileServer))
 
-	log.Println("Starting Web on port 8080")
-	err := http.ListenAndServe(":8080", mux)
+	log.Println("Starting Web on https://anggitmaulana.github.io/progategolang/")
+	err := http.ListenAndServe("https://anggitmaulana.github.io/progategolang/", mux)
 	log.Fatal(err)
 }

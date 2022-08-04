@@ -1,0 +1,14 @@
+{{template "layout". }}
+{{define "main"}}
+    <form method="post" action="/process">
+    <label>Name :</label>
+    <input type="text" placeholder="Type name here" name="name" required />
+    <br />
+
+    <label>Message :</label>
+    <input type="text" placeholder="Type message here" name="message" required />
+    <br />
+
+    <button type="submmit">Print</button>
+    </form>
+{{end}}
